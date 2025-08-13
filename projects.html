@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Projects — SENPAI 神" />
+    <title>Projects — SENPAI 神</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a href="index.html" class="logo" aria-label="Go to Home">
+          <img class="logo-img" src="assets/SANDEEP.png" width="32" height="32" alt="SENPAI 神 logo" />
+          <span class="wordmark">SENPAI 神</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <button id="menuToggle" class="icon-btn mobile-only" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <ul id="navMenu" class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">
+          <svg class="theme-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 3v2m0 14v2m9-9h-2M5 12H3m14.95 5.95-1.414-1.414M7.464 7.464 6.05 6.05m12.728 0-1.414 1.414M7.464 16.536 6.05 17.95" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main class="main" role="main">
+      <section id="projects" class="section">
+        <div class="container">
+          <h2 class="projects-title">Projects <img class="projects-badge" src="https://i.pinimg.com/originals/57/dd/0f/57dd0f15096296b73bc64aa9ebfbc290.jpg" alt="" /></h2>
+          <div class="projects-grid">
+            <article class="card project">
+              <div class="card-body">
+                <h3>EDITING <img class="project-icon" src="https://static.vecteezy.com/system/resources/previews/046/437/267/original/adobe-after-effects-icon-free-png.png" alt="" /></h3>
+                <p>Responsive landing page with animated components and a11y best practices.</p>
+                <ul class="tags">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JS</li>
+                </ul>
+              </div>
+              <div class="card-actions">
+                <a class="btn small" href="#">Live</a>
+                <a class="btn small" href="#">Code</a>
+              </div>
+            </article>
+            <article class="card project">
+              <div class="card-body">
+                <h3>WEBSITE DESIGN <img class="project-icon" src="https://code.visualstudio.com/assets/branding/app-icon.png" alt="" /></h3>
+                <p>SPA with client‑side routing, API integration, and offline caching.</p>
+                <ul class="tags">
+                  <li>React</li>
+                  <li>TypeScript</li>
+                  <li>PWA</li>
+                </ul>
+              </div>
+              <div class="card-actions">
+                <a class="btn small" href="#">Live</a>
+                <a class="btn small" href="#">Code</a>
+              </div>
+            </article>
+            <article class="card project">
+              <div class="card-body">
+                <h3>APP DESIGN <img class="project-icon" src="https://www.liblogo.com/img-logo/an8843ae6c-android-studio-logo-android-studio-alt-macos-icon-in-macos-big-sur.png" alt="" /></h3>
+                <p>Data dashboard with charts, theming, and keyboard navigation.</p>
+                <ul class="tags">
+                  <li>Vue</li>
+                  <li>D3</li>
+                  <li>UX</li>
+                </ul>
+              </div>
+              <div class="card-actions">
+                <a class="btn small" href="#">Live</a>
+                <a class="btn small" href="#">Code</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <small>© <span id="year"></span> SENPAI 神. All rights reserved.</small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/motion@10.16.2/dist/motion.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <div id="pageTransition" class="page-transition" aria-hidden="true"></div>
+    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  </body>
+  </html>
+
+
+

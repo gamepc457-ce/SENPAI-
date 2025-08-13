@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="SENPAI 神 — Portfolio" />
+    <title>SENPAI 神 — Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#home">Skip to content</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+          <a href="#home" class="logo" aria-label="Go to Home">
+            <img class="logo-img" src="assets/SANDEEP.png" width="32" height="32" alt="SENPAI 神 logo" />
+          <span class="wordmark">SENPAI 神</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <button id="menuToggle" class="icon-btn mobile-only" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+
+          <ul id="navMenu" class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">
+          <svg class="theme-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 3v2m0 14v2m9-9h-2M5 12H3m14.95 5.95-1.414-1.414M7.464 7.464 6.05 6.05m12.728 0-1.414 1.414M7.464 16.536 6.05 17.95" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="home" class="main" role="main">
+      <div id="homeContent">
+      <section class="section hero">
+        <div class="container hero-inner">
+          <div class="hero-content">
+            <h1>Hi, I’m <span class="accent">SANDEEP</span></h1>
+            <div class="cta-row">
+              <a class="btn primary" href="projects.html">View Projects</a>
+              <a class="btn" href="contact.html">Contact Me</a>
+            </div>
+            <div class="social-row" aria-label="Social links">
+              <a href="#" aria-label="GitHub" class="social-link">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.1-.75.08-.74.08-.74 1.22.09 1.86 1.26 1.86 1.26 1.08 1.86 2.83 1.32 3.52 1.01.11-.79.42-1.32.77-1.62-2.67-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.39 1.24-3.23-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.48 11.48 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.23 0 4.64-2.8 5.66-5.47 5.96.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58A12 12 0 0 0 12 .5Z"/>
+                </svg>
+              </a>
+              <a href="#" aria-label="LinkedIn" class="social-link">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5Zm.02 5.998H2V22h3V9.498Zm4 0H6.98V22h3V15.5c0-3.47 4.5-3.75 4.5 0V22h3v-7.5c0-6.02-6.5-5.79-7.5-2.83v-2.17Z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+           <div class="hero-art" aria-hidden="true">
+            <img class="hero-logo" src="assets/SANDEEP.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section id="music" class="section">
+        <div class="container">
+          <h2>🎵🎵🎵</h2>
+          <div class="music no-list">
+            <div class="player card" data-reveal>
+              <div class="player-inner">
+                <div class="cover" aria-hidden="true">
+                  <div class="cover-art"></div>
+                </div>
+                <div class="meta">
+                  <h3 id="trackTitle">Select a track</h3>
+                  <p id="trackArtist" class="muted">Artist</p>
+                  <div class="eq" id="eq" aria-hidden="true">
+                    <span></span><span></span><span></span><span></span>
+                  </div>
+                </div>
+                <div class="controls">
+                  <button id="prevBtn" class="icon-btn" aria-label="Previous">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 6v12M7 12l11-7v14L7 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </button>
+                  <button id="playPauseBtn" class="icon-btn primary" aria-label="Play">
+                    <svg id="playIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7-11-7Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                  </button>
+                  <button id="nextBtn" class="icon-btn" aria-label="Next">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 6v12M17 12 6 5v14l11-7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </button>
+                  <button id="muteBtn" class="icon-btn" aria-label="Mute" title="Mute (M)">
+                    <svg id="muteIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 10v4h4l5 5V5l-5 5H4Zm12.5 2a4.5 4.5 0 0 0-2.2-3.9l1-1.73A6.5 6.5 0 0 1 20.5 12a6.5 6.5 0 0 1-5.2 6.35l-1-1.74A4.5 4.5 0 0 0 16.5 12Z" fill="currentColor"/></svg>
+                  </button>
+                  <input id="volumeRange" class="volume-range" type="range" min="0" max="100" step="1" value="80" aria-label="Volume" title="Volume (Arrow Up/Down)" />
+                  <button id="shuffleBtn" class="icon-btn" aria-label="Shuffle off" title="Shuffle">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 3h5v5M3 8h5l8 8h5M21 16v5h-5M3 16h5l2.5-2.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </button>
+                  <button id="repeatBtn" class="icon-btn" aria-label="Repeat off" title="Repeat">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 2v3H7a4 4 0 0 0-4 4v1h3V9a1 1 0 0 1 1-1h10v3l4-4-4-4ZM7 22v-3h10a4 4 0 0 0 4-4v-1h-3v1a1 1 0 0 1-1 1H7v-3l-4 4 4 4Z" fill="currentColor"/></svg>
+                  </button>
+                </div>
+                <div class="progress">
+                  <span id="currentTime">0:00</span>
+                  <div class="bar" id="progressBar" role="slider" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
+                    <div class="fill" id="progressFill"></div>
+                  </div>
+                  <span id="duration">0:00</span>
+                </div>
+              </div>
+            </div>
+            <ul class="playlist" id="playlist" hidden>
+              <li class="card project" data-reveal data-yt="ERluub7bVZU" data-title="LOFI" data-artist="YouTube" data-img="https://static.vecteezy.com/system/resources/thumbnails/006/406/382/small_2x/music-icon-logo-for-apps-and-web-vector.jpg">
+                <div class="card-body">
+                  <h3>LOFI</h3>
+                  <p class="muted">YouTube</p>
+                </div>
+                <div class="card-actions">
+                  <button class="btn small track-btn">Play</button>
+                </div>
+              </li>
+              <li class="card project" data-reveal data-yt="YmfuBv-2OjU" data-title="SAD" data-artist="YouTube" data-img="https://static.vecteezy.com/system/resources/thumbnails/006/406/382/small_2x/music-icon-logo-for-apps-and-web-vector.jpg">
+                <div class="card-body">
+                  <h3>SAD</h3>
+                  <p class="muted">YouTube</p>
+                </div>
+                <div class="card-actions">
+                  <button class="btn small track-btn">Play</button>
+                </div>
+              </li>
+              <li class="card project" data-reveal data-yt="jzdcoODj9KM" data-title="SAD+LOFI" data-artist="YouTube" data-img="https://static.vecteezy.com/system/resources/thumbnails/006/406/382/small_2x/music-icon-logo-for-apps-and-web-vector.jpg">
+                <div class="card-body">
+                  <h3>SAD+LOFI</h3>
+                  <p class="muted">YouTube</p>
+                </div>
+                <div class="card-actions">
+                  <button class="btn small track-btn">Play</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      </div>
+      <div id="spaView" aria-live="polite"></div>
+
+      
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <small>© <span id="year"></span> SENPAI 神. All rights reserved.</small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/motion@10.16.2/dist/motion.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <div id="pageTransition" class="page-transition" aria-hidden="true"></div>
+    <div id="ytPlayer" class="yt-player" aria-hidden="true"></div>
+    <audio id="audio" preload="metadata"></audio>
+  </body>
+  </html>
+
+
